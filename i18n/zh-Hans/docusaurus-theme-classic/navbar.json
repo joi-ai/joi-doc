@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "主页",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "joi ai",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.turtor": {
+    "message": "指引",
+    "description": "Navbar item with label turtor"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Tutorial": {
+    "message": "指引",
+    "description": "Navbar item with label Tutorial"
+  }
+}

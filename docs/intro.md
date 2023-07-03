@@ -1,47 +1,37 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## JOI AI
+JOI AI is an open-source intelligent voice robot project that aims to create a better holographic AI voice assistant using large language models and services from various cloud vendors. JOI AI offers highly customizable features, allowing you to choose any character as your language partner, and it has excellent device compatibility.
 
-## Getting Started
+## Features
 
-Get started by **creating a new site**.
+- Modular design: The functionality plugins, speech recognition, speech synthesis, and chatbots are highly modular with a rich plugin system.
+- Chinese language support: Integrated with various Chinese speech recognition and speech synthesis technologies, including Baidu, iFlytek, Alibaba, Tencent, Apple, Microsoft Edge, and VITS Voice Cloning TTS.
+- Chatbot support: Supports online chatbots such as OpenAI's ChatGPT and Turing Robot.
+- Global listening and offline wake word: Supports two sets of offline voice command wake word engines: [Porcupine](https://github.com/Picovoice/porcupine) and [Snowboy](https://github.com/Kitt-AI/snowboy).
+- Flexible and customizable: Allows customization of the robot's name, appearance, and voice.
+- Smart home integration.
+- Backend support: Provides a companion backend for remote control, configuration modification, and log viewing.
+- Open API: Offers open APIs for implementing more advanced features.
+- Easy installation and support for multiple platforms: Can run on Mac and various Linux systems.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## System Requirements
 
-### What you'll need
+### Python Version
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+joi-ai only supports Python 3.7+ and does not support Python 2.x.
 
-## Generate a new site
+### Device Requirements
 
-Generate a new Docusaurus site using the **classic template**.
+joi-ai can run on the following devices and systems:
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- Intel-based Mac (M1 chip not supported)
+- 64-bit Ubuntu (12.04 and 14.04)
+- All models of Raspberry Pi (Raspbian OS)
+- Pine 64 with Debian Jessie 8.5 (3.10.102)
+- Intel Edison with Ubilinux (Debian Wheezy 7.8)
+- Windows with Windows Subsystem for Linux (WSL) installed
