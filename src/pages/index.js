@@ -6,7 +6,7 @@ import Typed from "typed.js";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import Grid from "@site/src/components/grid";
+import Grid from "@site/src/components/Grid";
 import Translate, { translate } from "@docusaurus/Translate";
 
 import styles from "./index.module.css";

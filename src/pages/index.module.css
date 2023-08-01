@@ -60,9 +60,10 @@
   display: block;
   width: 100% !important;
   height: 100% !important;
-  &:hover {
-    color: white;
-  }
+}
+
+.link:hover {
+  color: white;
 }
 
 @media screen and (max-width: 996px) {
