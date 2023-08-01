@@ -8,20 +8,14 @@ export default function Grid() {
   const size = 60; // 50 width + 2 * 5 margin
   const menuHeight = 60;
   const isBrowser = useIsBrowser();
-  const [wCount, setWCount] = useState(
-    isBrowser ? Math.floor(window.innerWidth / size) : 0
-  );
-  const [hCount, setHCount] = useState(
-    isBrowser ? Math.floor((window.innerHeight - menuHeight) / size) : 0
-  );
 
-  const divArray = Array.from(
-    { length: wCount * hCount },
-    (_, index) => index + 1
-  );
-
+  const [wCount, setWCount] = useState(30);
+  const [hCount, setHCount] = useState(20);
   useEffect(() => {
     if (isBrowser) {
+      setWCount(Math.floor(window.innerWidth / size));
+      setHCount(Math.floor((window.innerHeight - menuHeight) / size));
+
       const caculateCount = () => {
         setWCount(Math.floor((window.innerWidth - 10) / size));
         setHCount(Math.floor((window.innerHeight - menuHeight) / size));
@@ -33,12 +27,18 @@ export default function Grid() {
         window.removeEventListener("resize", caculateCount);
       };
     }
-  }, []);
+  }, [isBrowser]);
+
+  const divArray = Array.from(
+    { length: wCount * hCount },
+    (_, index) => index + 1
+  );
 
   return (
     <div className={styles.grid}>
       {divArray.map((num) => (
         <div
+          key={`w-${num}`}
           onClick={() => {
             anime({
               targets: ".square",
