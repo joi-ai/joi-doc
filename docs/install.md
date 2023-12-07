@@ -7,7 +7,7 @@ sidebar_position: 1
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/zexiplus/joi-ai
+git clone https://github.com/joi-ai/joi
 ```
 
 ### 2. Install sox, ffmpeg, and PyAudio
