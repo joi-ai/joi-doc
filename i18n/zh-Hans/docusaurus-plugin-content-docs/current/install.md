@@ -7,7 +7,7 @@ sidebar_position: 1
 ### 克隆仓库
 
 ```bash
-git clone https://github.com/zexiplus/joi-ai
+git clone https://github.com/joi-ai/joi
 ```
 
 ### 2. 安装 sox, ffmpeg 和 PyAudio
